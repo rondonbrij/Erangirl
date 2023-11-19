@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PSD</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+    
+        h1,
+        h2,
+        h3 {
+            text-align: center;
+        }
+    
+        form {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    
+        input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+    
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+    
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    
+        /* Style for child inputs */
+        #childrenContainer div {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+    
+        /* Style for dual citizen radio buttons */
+        .citizen-group input[type="radio"] {
+            margin-right: 5px;
+        }
+    </style>
+  </head>
+
+  <body>
+    <h1>PERSONAL DATA SHEET</h1>
+    <form>
+      <div id="personal-information">
+        <h2>PERSONAL INFORMATION</h2>
+        <div class="first-section">
+          <label>SURNAME: <input type="text" name="surname" /></label><br />
+          <label>FIRST NAME: <input type="text" name="first-name" /></label
+          ><br />
+          <label>MIDDLE NAME: <input type="text" name="middle-name" /></label
+          ><br />
+          <label
+            >NAME EXTENSION (jr, sr):
+            <input type="text" name="name-extension" /></label
+          ><br />
+        </div>
+
+        <div class="second-section-left">
+          <label>DATE OF BIRTH: <input type="date" name="dob" /></label><br />
+          <label>PLACE OF BIRTH: <input type="text" name="pob" /></label><br />
+          <label>SEX: <input type="text" name="sex" /></label><br />
+          <label>CIVIL STATUS: <input type="text" name="civil-status" /></label
+          ><br />
+          <label>HEIGHT (m): <input type="text" name="height" /></label><br />
+          <label>WEIGHT (kg): <input type="text" name="weight" /></label><br />
+          <label>BLOOD TYPE: <input type="text" name="blood-type" /></label
+          ><br />
+          <label>GSIS ID NO.: <input type="text" name="gsis" /></label><br />
+          <label>PAGI-BIG ID NO.: <input type="text" name="pagibig" /></label
+          ><br />
+          <label>PHILHEALTH NO.: <input type="text" name="philhealth" /></label
+          ><br />
+          <label>SSS NO.: <input type="text" name="sss" /></label><br />
+          <label>TIN NO.: <input type="text" name="tin" /></label><br />
+          <label
+            >AGENCY EMPLOYEE NO.:
+            <input type="text" name="agency-employee" /></label
+          ><br />
+        </div>
+
+        <div class="second-section-right">
+          <div class="citizen-group">
+            <!-- <input type="radio" id="dual-citizen" name="dual-citizen" value="Yes">
+                                    <label for="dual-citizen"> YES</label><br>
+                                    <input type="radio" id="dual-citizen" name="dual-citizen" value="No">
+                                    <label for="dual-citizen"> NO</label><br> -->
+
+            <label>CITIZENSHIP: <input type="text" name="citizenship" /></label
+            ><br />
+            <p>If holder of dual citizenship, please indicate the details</p>
+            <label
+              >2ND CITIZENSHIP:
+              <input type="text" name="second-citizenship" /></label
+            ><br />
+            <label
+              >Please Indicate country:
+              <input type="text" name="country" /></label
+            ><br />
+          </div>
+
+          <div class="residential-address">
+            <h1>RESIDENTIAL ADDRESS</h1>
+            <label
+              >House/Block/Lot No.:
+              <input type="text" name="residential-house-lot-no" /></label
+            ><br />
+            <label
+              >Street: <input type="text" name="residential-street" /></label
+            ><br />
+
+            <label
+              >Subdivision/Village:
+              <input type="text" name="residential-subdivision" /></label
+            ><br />
+            <label
+              >Barangay:
+              <input type="text" name="residential-barangay" /></label
+            ><br />
+
+            <label
+              >City/Municipality:
+              <input type="text" name="residential-city-municipality" /></label
+            ><br />
+            <label
+              >Province:
+              <input type="text" name="residential-province" /></label
+            ><br />
+
+            <label
+              >ZIP CODE:
+              <input type="text" name="residential-zip-code" /></label
+            ><br />
+          </div>
+
+          <div class="permanent-address">
+            <h1>PERMANENT ADDRESS</h1>
+            <label
+              >House/Block/Lot No.:
+              <input type="text" name="permanent-house-lot-no" /></label
+            ><br />
+            <label>Street: <input type="text" name="permanent-street" /></label
+            ><br />
+
+            <label
+              >Subdivision/Village:
+              <input type="text" name="permanent-subdivision" /></label
+            ><br />
+            <label
+              >Barangay: <input type="text" name="permanent-barangay" /></label
+            ><br />
+
+            <label
+              >City/Municipality:
+              <input type="text" name="permanent-city-municipality" /></label
+            ><br />
+            <label
+              >Province: <input type="text" name="permanent-province" /></label
+            ><br />
+
+            <label
+              >ZIP CODE: <input type="text" name="permanent-zip-code" /></label
+            ><br />
+          </div>
+
+          <label>TELEPHONE NO.: <input type="text" name="telephone-no" /></label
+          ><br />
+          <label>MOBILE NO.: <input type="text" name="mobile-no" /></label
+          ><br />
+          <label
+            >EMAIL ADDRESS: <input type="email" name="email-address" /></label
+          ><br />
+        </div>
+      </div>
+
+      <div class="family-background">
+        <h2>II. FAMILY BACKGROUND</h2>
+
+        <div class="spouse-info">
+          <h3>Spouse's Info</h3>
+          <label>SURNAME: <input type="text" name="spouse-surname" /></label
+          ><br />
+          <label
+            >FIRST NAME: <input type="text" name="spouse-first-name" /></label
+          ><br />
+          <label
+            >MIDDLE NAME: <input type="text" name="spouse-middle-name" /></label
+          ><br />
+          <label
+            >NAME EXTENSION (jr, sr):
+            <input type="text" name="spouse-name-extension" /></label
+          ><br />
+          <label
+            >OCCUPATION: <input type="text" name="spouse-occupation" /></label
+          ><br />
+          <label
+            >EMPLOYER/BUSINESS NAME:
+            <input type="text" name="spouse-employer" /></label
+          ><br />
+          <label
+            >BUSINESS ADDRESS:
+            <input type="text" name="spouse-business-address" /></label
+          ><br />
+          <label
+            >TELEPHONE NO.: <input type="text" name="spouse-telephone" /></label
+          ><br />
+        </div>
+
+        <div class="family-children">
+          <label>23. NAME of CHILDREN (Write full name and list all):</label
+          ><br />
+          <label
+            >DATE OF BIRTH (mm/dd/yyyy):
+            <input type="text" name="child-date-of-birth" /></label
+          ><br />
+        </div>
+
+        <div class="parents-info">
+          <h3>Father's Info</h3>
+          <label>SURNAME: <input type="text" name="father-surname" /></label
+          ><br />
+          <label
+            >FIRST NAME: <input type="text" name="father-first-name"
+          /></label>
+          <label
+            >NAME EXTENSION (JR., SR, N.A.):
+            <input type="text" name="father-name-extension" /></label
+          ><br />
+          <label
+            >MIDDLE NAME: <input type="text" name="father-middle-name" /></label
+          ><br />
+
+          <h3>Mother's Info</h3>
+          <label
+            >MAIDEN NAME: <input type="text" name="mother-maiden-name" /></label
+          ><br />
+          <label
+            >SURNAME: <input type="text" name="mother-maiden-surname" /></label
+          ><br />
+          <label
+            >FIRST NAME:
+            <input type="text" name="mother-maiden-first-name" /></label
+          ><br />
+          <label
+            >MIDDLE NAME:
+            <input type="text" name="mother-maiden-middle-name" /></label
+          ><br />
+        </div>
+
+        <div class="children-info">
+          <label>23. NAME of CHILDREN (Write full name and list all):</label
+          ><br />
+
+          <!-- Input for the number of children -->
+          <label
+            >Number of Children:
+            <input
+              type="number"
+              id="numChildren"
+              name="num-children"
+              min="0"
+              max="12" /></label
+          ><br />
+
+          <!-- Container to dynamically generate child input fields -->
+          <div id="childrenContainer"></div>
+        </div>
+      </div>
+
+      <div class="educational-background">
+        <h2>EDUCATIONAL BACKGROUND</h2>
+
+        <label class="h3">ELEMENTARY LEVEL</label><br />
+        <label
+          >NAME OF SCHOOL: <input type="text" name="elementary-school" /></label
+        ><br />
+        <label
+          >BASIC EDUCATION/DEGREE/COURSE:
+          <input type="text" name="elementary-course" /></label
+        ><br />
+        <label
+          >PERIOD OF ATTENDANCE: From
+          <input type="text" name="elementary-from" /> To
+          <input type="text" name="elementary-to" /></label
+        ><br />
+        <label
+          >HIGHEST LEVEL/UNITS EARNED (if not graduated):
+          <input type="text" name="elementary-highest-level" /></label
+        ><br />
+        <label
+          >YEAR GRADUATED:
+          <input type="text" name="elementary-grad-year" /></label
+        ><br />
+        <label
+          >SCHOLARSHIP/ACADEMIC HONORS RECEIVED:
+          <input type="text" name="elementary-honors" /></label
+        ><br />
+
+        <!-- Secondary Education -->
+        <label class="h3">SECONDARY LEVEL</label><br />
+        <label
+          >NAME OF SCHOOL: <input type="text" name="secondary-school" /></label
+        ><br />
+        <label
+          >BASIC EDUCATION/DEGREE/COURSE:
+          <input type="text" name="secondary-course" /></label
+        ><br />
+        <label
+          >PERIOD OF ATTENDANCE: From
+          <input type="text" name="secondary-from" /> To
+          <input type="text" name="secondary-to" /></label
+        ><br />
+        <label
+          >HIGHEST LEVEL/UNITS EARNED (if not graduated):
+          <input type="text" name="secondary-highest-level" /></label
+        ><br />
+        <label
+          >YEAR GRADUATED:
+          <input type="text" name="secondary-grad-year" /></label
+        ><br />
+        <label
+          >SCHOLARSHIP/ACADEMIC HONORS RECEIVED:
+          <input type="text" name="secondary-honors" /></label
+        ><br />
+
+        <!-- Vocational/Trade Course -->
+        <label class="h3">VOCATIONAL / TRADE COURSE LEVEL</label><br />
+        <label
+          >NAME OF SCHOOL: <input type="text" name="vocational-school" /></label
+        ><br />
+        <label
+          >BASIC EDUCATION/DEGREE/COURSE:
+          <input type="text" name="vocational-course" /></label
+        ><br />
+        <label
+          >PERIOD OF ATTENDANCE: From
+          <input type="text" name="vocational-from" /> To
+          <input type="text" name="vocational-to" /></label
+        ><br />
+        <label
+          >HIGHEST LEVEL/UNITS EARNED (if not graduated):
+          <input type="text" name="vocational-highest-level" /></label
+        ><br />
+        <label
+          >YEAR GRADUATED:
+          <input type="text" name="vocational-grad-year" /></label
+        ><br />
+        <label
+          >SCHOLARSHIP/ACADEMIC HONORS RECEIVED:
+          <input type="text" name="vocational-honors" /></label
+        ><br />
+
+        <!-- Tertiary Education -->
+        <label class="h3">TERTIARY LEVEL</label><br />
+        <label
+          >NAME OF SCHOOL: <input type="text" name="tertiary-school" /></label
+        ><br />
+        <label
+          >BASIC EDUCATION/DEGREE/COURSE:
+          <input type="text" name="tertiary-course" /></label
+        ><br />
+        <label
+          >PERIOD OF ATTENDANCE: From
+          <input type="text" name="tertiary-from" /> To
+          <input type="text" name="tertiary-to" /></label
+        ><br />
+        <label
+          >HIGHEST LEVEL/UNITS EARNED (if not graduated):
+          <input type="text" name="tertiary-highest-level" /></label
+        ><br />
+        <label
+          >YEAR GRADUATED:
+          <input type="text" name="tertiary-grad-year" /></label
+        ><br />
+        <label
+          >SCHOLARSHIP/ACADEMIC HONORS RECEIVED:
+          <input type="text" name="tertiary-honors" /></label
+        ><br />
+
+        <!-- Graduate Studies -->
+        <label class="h3">GRADUATE STUDIES LEVEL</label><br />
+        <label
+          >NAME OF SCHOOL: <input type="text" name="graduate-school" /></label
+        ><br />
+        <label
+          >BASIC EDUCATION/DEGREE/COURSE:
+          <input type="text" name="graduate-course" /></label
+        ><br />
+        <label
+          >PERIOD OF ATTENDANCE: From
+          <input type="text" name="graduate-from" /> To
+          <input type="text" name="graduate-to" /></label
+        ><br />
+        <label
+          >HIGHEST LEVEL/UNITS EARNED (if not graduated):
+          <input type="text" name="graduate-highest-level" /></label
+        ><br />
+        <label
+          >YEAR GRADUATED: <input type="text" name="graduate-grad-year"
+        /></label>
+
+        <!-- (Continue on separate sheet if necessary) -->
+
+        <label>SIGNATURE: <input type="text" name="signature" /></label><br />
+        <label>DATE: <input type="date" name="signature-date" /></label><br />
+        <p>CS FORM 212 (Revised 2017), Page 1 of 4</p>
+      </div>
+
+        <div class="civil-service-eligibility">
+            <h2>IV. CIVIL SERVICE ELIGIBILITY</h2>
+
+            <label
+            >CAREER SERVICE/RA 1080 (BOARD/BAR) UNDER SPECIAL LAWS/CES/CSEE /
+            BARANGAY ELIGIBILITY/DRIVER'S LICENSE:
+            <input type="text" name="civil-service-eligibility"
+            /></label>
+
+            <label
+            >RATING (if applicable): <input type="text" name="rating"
+            /></label>
+
+            <label
+            >DATE OF EXAMINATION/CONFERMENT:
+            <input type="date" name="exam-conferment-date"
+            /></label>
+
+            <label
+            >PLACE OF EXAMINATION/CONFERMENT:
+            <input type="text" name="exam-conferment-place"
+            /></label>
+
+            <div class="licence">
+            <label>LICENSE (if applicable)</label>
+            <label>NUMBER : <input type="text" name="license-number" /></label>
+
+            <label
+                >Date of Validity: <input type="date" name="license-validity-date"
+            /></label>
+            </div>
+            <br />
+
+            <label>(Continue on separate sheet if necessary) </label><br />
+        
+        </div>
+
+        <div class="work-experience">
+            <h2>V. WORK EXPERIENCE</h2>
+
+            <label>28. INCLUSIVE DATES (mm/dd/yyyy) - FROM:
+                <input type="date" name="work-from-date"></label>
+
+            <label>TO:
+                <input type="date" name="work-to-date"></label>
+
+            <label>POSITION TITLE (Write in full/Do not abbreviate):
+                <input type="text" name="position-title"></label>
+
+            <label>DEPARTMENT/AGENCY/OFFICE/COMPANY (Write in full/Do not abbreviate):
+                <input type="text" name="company-name"></label>
+
+            <label>MONTHLY SALARY:
+                <input type="text" name="monthly-salary"></label>
+
+            <label>SALARY/JOB/PAY GRADE (if applicable) & STEP (Format "00-0")/INCREMENT:
+                <input type="text" name="salary-grade"></label>
+
+            <label>STATUS OF APPOINTMENT:
+                <input type="text" name="appointment-status"></label>
+
+            <label>GOV'T SERVICE (Y/N):
+                <input type="text" name="govt-service"></label>
+
+            <label>(Continue on separate sheet if necessary) </label>
+        
+                 <label>SIGNATURE: <input type="text" name="signature" /></label><br />
+            <label>DATE: <input type="date" name="signature-date" /></label><br />
+            <p>CS FORM 212 (Revised 2017), Page 2 of 4</p>
+        </div>
+
+        <div class="voluntary-work">
+            <h2>VI. VOLUNTARY WORK OR INVOLVEMENT IN CIVIC / NON-GOVERNMENT / PEOPLE / VOLUNTARY ORGANIZATION/S</h2>
+
+            <label>29. NAME & ADDRESS OF ORGANIZATION (Write in full):
+                <input type="text" name="organization-name"></label>
+
+            <label>INCLUSIVE DATES (mm/dd/yyyy) - FROM:
+                <input type="date" name="voluntary-work-from-date"></label>
+
+            <label>TO:
+                <input type="date" name="voluntary-work-to-date"></label>
+
+            <label>NUMBER OF HOURS:
+                <input type="text" name="voluntary-work-hours"></label>
+
+            <label>POSITION / NATURE OF WORK:
+                <input type="text" name="voluntary-work-position"></label>
+        </div>
+
+        <div class="learning-development">
+            <h2>VII. LEARNING AND DEVELOPMENT (L&D) INTERVENTIONS/TRAINING PROGRAMS ATTENDED</h2>
+
+            <label>30. TITLE OF LEARNING AND DEVELOPMENT INTERVENTIONS/TRAINING PROGRAMS (Write in full):
+                <input type="text" name="ld-title"></label>
+
+            <label>INCLUSIVE DATES OF ATTENDANCE (mm/dd/yyyy) - FROM:
+                <input type="date" name="ld-from-date"></label>
+
+            <label>TO:
+                <input type="date" name="ld-to-date"></label>
+
+            <label>NUMBER OF HOURS:
+                <input type="text" name="ld-hours"></label>
+
+            <label>Type of LD (Managerial/Supervisory/Technical/etc):
+                <input type="text" name="ld-type"></label>
+
+            <label>CONDUCTED/SPONSORED BY (Write in full):
+                <input type="text" name="ld-sponsored-by"></label>
+        
+        </div>
+
+        <div class="other-information">
+            <label>31. SPECIAL SKILLS and HOBBIES:
+                <input type="text" name="special-skills-hobbies"></label>
+
+            <label>32. NON-ACADEMIC DISTINCTIONS / RECOGNITION (Write in full):
+                <input type="text" name="non-academic-distinctions"></label>
+
+            <label>33. MEMBERSHIP IN ASSOCIATION/ORGANIZATION (Write in full):
+                <input type="text" name="membership-organization"></label>
+        </div>
+
+        <div id="page-four">
+            <div class="relationship">
+    <label>34. Are you related by consanguinity or affinity to the appointing or recommending authority, or to the chief of bureau or office or to the person who has immediate supervision over you in the Office, Bureau, or Department where you will be appointed?</label>
+    <label>a. within the third degree?
+        <input type="radio" name="relationship-third-degree" value="Yes"> Yes
+        <input type="radio" name="relationship-third-degree" value="No"> No
+    </label>
+    <label>b. within the fourth degree (for Local Government Unit - Career Employees)?
+        <input type="radio" name="relationship-fourth-degree" value="Yes"> Yes
+        <input type="radio" name="relationship-fourth-degree" value="No"> No
+    </label>
+    <label>If YES, give details:
+        <input type="text" name="relationship-details"></label>
+</div>
+
+<div class="administrative-offense">
+    <label>35. a. Have you ever been found guilty of any administrative offense?
+        <input type="radio" name="administrative-offense" value="Yes"> Yes
+        <input type="radio" name="administrative-offense" value="No"> No
+    </label>
+    <label>If YES, give details:
+        <input type="text" name="administrative-offense-details"></label>
+
+    <label>b. Have you been criminally charged before any court?
+        <input type="radio" name="criminal-charged" value="Yes"> Yes
+        <input type="radio" name="criminal-charged" value="No"> No
+    </label>
+    <label>If YES, give details:
+        <input type="text" name="criminal-charged-details"></label>
+    <label>Date Filed:
+        <input type="date" name="criminal-charged-date-filed"></label>
+    <label>Status of Case/s:
+        <input type="text" name="criminal-charged-status"></label>
+</div>
+
+<div class="convicted-crime">
+    <label>36. Have you ever been convicted of any crime or violation of any law, decree, ordinance, or regulation by any court or tribunal?
+        <input type="radio" name="convicted-crime" value="Yes"> Yes
+        <input type="radio" name="convicted-crime" value="No"> No
+    </label>
+    <label>If YES, give details:
+        <input type="text" name="convicted-crime-details"></label>
+</div>
+
+<div class="separation">
+    <label>37. Have you ever been separated from the service in any of the following modes: resignation, retirement, dropped from the rolls, dismissal, termination, end of term, finished contract, or phased out (abolition) in the public or private sector?
+        <input type="radio" name="separation" value="Yes"> Yes
+        <input type="radio" name="separation" value="No"> No
+    </label>
+    <label>If YES, give details:
+        <input type="text" name="separation-details"></label>
+    <label>Mode of Separation:
+        <input type="text" name="separation-mode"></label>
+</div>
+
+<div class="election-candidacy">
+    <label>38. a. Have you ever been a candidate in a national or local election held within the last year (except Barangay election)?
+        <input type="radio" name="election-candidacy" value="Yes"> Yes
+        <input type="radio" name="election-candidacy" value="No"> No
+    </label>
+    <label>If YES, give details:
+        <input type="text" name="election-candidacy-details"></label>
+
+    <label>b. Have you resigned from the government service during the three (3)-month period before the last election to promote/actively campaign for a national or local candidate?
+        <input type="radio" name="resigned-for-campaign" value="Yes"> Yes
+        <input type="radio" name="resigned-for-campaign" value="No"> No
+    </label>
+    <label>If YES, give details:
+        <input type="text" name="resigned-for-campaign-details"></label>
+</div>
+
+<div class="immigrant-status">
+    <label>39. Have you acquired the status of an immigrant or permanent resident of another country?
+        <input type="radio" name="immigrant-status" value="Yes"> Yes
+        <input type="radio" name="immigrant-status" value="No"> No
+    </label>
+    <label>If YES, give details (country):
+        <input type="text" name="immigrant-country"></label>
+</div>
+
+<div class="special-laws">
+    <label>40. Pursuant to: (a) Indigenous People's Act (RA 8371); (b) Magna Carta for Disabled Persons (RA 7277); and (c) Solo Parents Welfare Act of 2000 (RA 8972), please answer the following items:</label>
+
+    <label>a. Are you a member of any indigenous group?
+        <input type="radio" name="indigenous-group" value="Yes"> Yes
+        <input type="radio" name="indigenous-group" value="No"> No
+    </label>
+    <label>If YES, please specify:
+        <input type="text" name="indigenous-group-details"></label>
+
+    <label>b. Are you a person with a disability?
+        <input type="radio" name="disability" value="Yes"> Yes
+        <input type="radio" name="disability" value="No"> No
+    </label>
+    <label>If YES, please specify ID No:
+        <input type="text" name="disability-id"></label>
+
+    <label>c. Are you a solo parent?
+        <input type="radio" name="solo-parent" value="Yes"> Yes
+        <input type="radio" name="solo-parent" value="No"> No
+    </label>
+    <label>If YES, please specify ID No:
+        <input type="text" name="solo-parent-id"></label>
+</div>
+
+<div class="references">
+    <label>41. REFERENCES (Person not related by consanguinity or affinity to applicant/appointee)</label>
+
+    <div class="reference">
+        <label>NAME:
+            <input type="text" name="reference1-name"></label>
+        <label>ADDRESS:
+            <input type="text" name="reference1-address"></label>
+        <label>TEL. NO.:
+            <input type="tel" name="reference1-phone"></label>
+    </div>
+
+    <div class="reference">
+        <label>NAME:
+            <input type="text" name="reference2-name"></label>
+        <label>ADDRESS:
+            <input type="text" name="reference2-address"></label>
+        <label>TEL. NO.:
+            <input type="tel" name="reference2-phone"></label>
+    </div>
+
+    <div class="reference">
+        <label>NAME:
+            <input type="text" name="reference3-name"></label>
+        <label>ADDRESS:
+            <input type="text" name="reference3-address"></label>
+        <label>TEL. NO.:
+            <input type="tel" name="reference3-phone"></label>
+    </div>
+</div>
+        
+</div>
+
+
+    
+    </div>
+    </form>
+
+    <script>
+      function generateChildInputs() {
+        var numChildren = document.getElementById("numChildren").value;
+        var container = document.getElementById("childrenContainer");
+        container.innerHTML = ""; // Clear previous content
+
+        for (var i = 1; i <= numChildren; i++) {
+          var childDiv = document.createElement("div");
+          childDiv.innerHTML = `
+                                    <!-- Child ${i} -->
+                                    <label>FIRST NAME: <input type="text" name="child${i}-first-name"></label>
+                                    <label>MIDDLE NAME: <input type="text" name="child${i}-middle-name"></label>
+                                    <label>NAME EXTENSION (JR., SR, N.A.): <input type="text" name="child${i}-name-extension"></label>
+                                    <label>DATE OF BIRTH (mm/dd/yyyy): <input type="text" name="child${i}-date-of-birth"></label><br>
+                                `;
+          container.appendChild(childDiv);
+        }
+      }
+
+      // Attach the function to the input's change event
+      document
+        .getElementById("numChildren")
+        .addEventListener("input", generateChildInputs);
+
+      // Initial generation based on default value or if pre-set
+      generateChildInputs();
+    </script>
+  </body>
+</html>
